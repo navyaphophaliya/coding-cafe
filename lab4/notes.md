@@ -1,0 +1,8 @@
+1) The `--global` flag tells Git to apply the configuration options to your entire user account across all repositories on your system (saving them in `~/.gitconfig`). If left out, the configuration would only apply to the current local repository, or fail if you are not currently inside a Git repository.
+2) The hidden `.git` directory appeared in `ls -a`. Inside `.git`, Git stores all internal tracking data, configuration settings, commit history, branch pointers, and object databases for the repository.
+3)Git offers to track hundreds or thousands of untracked files. The `.venv/` directory (Python virtual environment) contains auto-generated packages, dependencies, and executables that were not written by hand.
+4) The `.venv/` folder and other ignored items (like `__pycache__/` and `.DS_Store`) disappeared from the list of untracked files. Only `.gitignore` and actual project files remain listed.
+5) It should be committed. Committing `.gitignore` ensures that everyone collaborating on the repository shares the exact same rules about which files and build artifacts to ignore.
+6) `README.md` moved from the "Untracked files" section down into the **"Changes to be committed"** section (highlighted in green), indicating that it is now staged for the next commit.
+7) The terminal reported 2 files changed (`README.md`,`lab4/notes.md`) and 0 insertions(+) because both files were created empty before committing.
+8) For my commit `fa2502a`: They are called the **short hash** (or abbreviated SHA-1), and they serve as a unique, short fingerprint to reference and inspect your exact snapshot (`Lab work so far`). 
