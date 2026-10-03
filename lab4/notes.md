@@ -1,8 +1,14 @@
 1) The `--global` flag tells Git to apply the configuration options to your entire user account across all repositories on your system (saving them in `~/.gitconfig`). If left out, the configuration would only apply to the current local repository, or fail if you are not currently inside a Git repository.
 2) The hidden `.git` directory appeared in `ls -a`. Inside `.git`, Git stores all internal tracking data, configuration settings, commit history, branch pointers, and object databases for the repository.
-3)Git offers to track hundreds or thousands of untracked files. The `.venv/` directory (Python virtual environment) contains auto-generated packages, dependencies, and executables that were not written by hand.
+3) Git offers to track hundreds or thousands of untracked files. The `.venv/` directory (Python virtual environment) contains auto-generated packages, dependencies, and executables that were not written by hand.
 4) The `.venv/` folder and other ignored items (like `__pycache__/` and `.DS_Store`) disappeared from the list of untracked files. Only `.gitignore` and actual project files remain listed.
 5) It should be committed. Committing `.gitignore` ensures that everyone collaborating on the repository shares the exact same rules about which files and build artifacts to ignore.
 6) `README.md` moved from the "Untracked files" section down into the **"Changes to be committed"** section (highlighted in green), indicating that it is now staged for the next commit.
 7) The terminal reported 2 files changed (`README.md`,`lab4/notes.md`) and 0 insertions(+) because both files were created empty before committing.
-8) For my commit `fa2502a`: They are called the **short hash** (or abbreviated SHA-1), and they serve as a unique, short fingerprint to reference and inspect your exact snapshot (`Lab work so far`). 
+8) For my commit `fa2502a`: They are called the **short hash** (or abbreviated SHA-1), and they serve as a unique, short fingerprint to reference and inspect your exact snapshot (`Lab work so far`).
+9) The four steps are edit, stage, commit, and repeat. First, you make changes to a file, then use git add to stage those changes, git commit to save them in Git history, and repeat the process whenever you make new changes.
+10)  README.md has a special name because GitHub automatically displays it as the main introduction to a repository. It is placed in the root of the repository so visitors can immediately see information about the project and its contents.
+11) gh auth login authenticates my GitHub account through the browser and stores the authentication credentials securely. Because Git is authenticated, I do not need to enter my GitHub password every time I push.
+12) The README.md file is shown on the front page because GitHub automatically renders a repository's README as the main introduction to the project. It gives visitors an overview of the repository and its contents.
+13) No, pushing did not change my local history. The commits were already present locally; git push simply copied those commits to the remote GitHub repository.
+14) A private repository still exists on GitHub but only people who have been given access can view it. If the repository does not exist on GitHub at all, there is no online copy for anyone to access.
